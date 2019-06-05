@@ -1,0 +1,8 @@
+# cat playbook_roles.yml
+---
+- name: Execute apache and security roles
+  hosts: all
+
+  roles:
+    - { role: apache }
+    - { role: security }
